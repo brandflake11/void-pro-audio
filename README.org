@@ -1,0 +1,27 @@
+* Void Pro-Audio
+
+  Void Pro-Audio is my attempt to create a pro-audio meta-package, like Arch Linux's, for Void Linux using the standard packages in the Void Linux Repositories. This script can be a drop-in solution for getting up and running with pro-audio on Void Linux.
+
+* Getting Started
+
+  This repo contains the install.sh script. Simply ~chmod +x install.sh~, then ~./install.sh~. The script itself contains only one real line of code:
+
+  ~sudo xbps-install $PLUGINS $TOOLS $LIBRARIES~
+
+  There are three variables containing all of the package names: ~$PLUGINS~, ~$TOOLS~, and ~$LIBRARIES~, with the packages separated out in each category. This should help with organization of the packages and letting the user separate them out if needed.
+
+  If you have read everything in this header and do not understand what it means, then follow these steps below in a terminal:
+
+   #+BEGIN_SRC bash
+     cd void-pro-audio
+     chmod +x install.sh
+     ./install.sh
+   #+END_SRC
+
+* Contributing
+
+  If there are any packages I missed, please submit a pull request. Also, I have only tested this on a 32-bit Void Linux setup. There might be more/less packages on x64 and arm, so feel free to submit these packages as well and I will integrate some logic for each architecture.
+
+* License
+
+  This script's code is all licensed under the [[https://www.gnu.org/licenses/gpl-3.0.en.html][GPLv3]]. The programs this script installs all have their own respective licenses. As a user of this script, you assume all responsibility for damages or other happenings that may occur.
