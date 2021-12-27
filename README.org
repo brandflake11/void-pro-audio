@@ -5,18 +5,20 @@
 * Getting Started
 
   This repo contains the install.sh script. Simply ~chmod +x install.sh~, then ~./install.sh~. The script itself contains only one real line of code:
-
-  ~sudo xbps-install $PLUGINS $TOOLS $LIBRARIES~
+  
+  #+BEGIN_SRC bash
+  sudo xbps-install $PLUGINS $TOOLS $LIBRARIES
+  #+END_SRC
 
   There are three variables containing all of the package names: ~$PLUGINS~, ~$TOOLS~, and ~$LIBRARIES~, with the packages separated out in each category. This should help with organization of the packages and letting the user separate them out if needed.
 
-  If you have read everything in this header and do not understand what it means, then follow these steps below in a terminal:
+  If you have read everything in this header and just want to install the packages, then follow these steps below in a terminal:
 
-   #+BEGIN_SRC bash
-     cd void-pro-audio
-     chmod +x install.sh
-     ./install.sh
-   #+END_SRC
+  #+BEGIN_SRC bash
+    cd void-pro-audio
+    chmod +x install.sh
+    ./install.sh
+  #+END_SRC
 
 * Contributing
 
